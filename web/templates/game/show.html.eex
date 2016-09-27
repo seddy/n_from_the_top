@@ -1,0 +1,18 @@
+<h2>Show game</h2>
+
+<ul>
+
+  <li>
+    <strong>Numbers:</strong>
+    <%= @game.numbers %>
+  </li>
+
+  <li>
+    <strong>Target:</strong>
+    <%= @game.target %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: game_path(@conn, :edit, @game) %>
+<%= link "Back", to: game_path(@conn, :index) %>
